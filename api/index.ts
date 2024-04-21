@@ -12,8 +12,8 @@ const app = express()
 app.use(express.static('public'));
 
 app.get('/', function (req, res) {
-	// res.sendFile(path.join(__dirname, '..', 'dist', 'index.html'));
-	res.send('Hello World!')
+	res.sendFile(path.join(__dirname, '..', 'dist', 'index.html'));
+	// res.send('Hello World!')
 });
 
 // const staticFileMiddleware = express.static('../dist');
