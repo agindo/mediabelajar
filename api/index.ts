@@ -34,4 +34,6 @@ app.get('/', function (req, res) {
 //   res.render(path.join(__dirname + '../dist/index.html'));
 // });
 
-app.listen(port, () => console.log(`Listening on port ${port}`))
+app.listen(port, () => console.log(`Listening on port ${port}`));
+
+module.exports = app;
