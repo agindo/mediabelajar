@@ -9,7 +9,7 @@ const app = express()
 // bind the request to an absolute path or relative to the CWD
 // app.use(express.static('dist'))
 
-const staticFileMiddleware = express.static('./dist');
+const staticFileMiddleware = express.static('../dist');
 
 app.use(staticFileMiddleware);
 app.use(history({
@@ -20,7 +20,7 @@ app.use(history({
 app.use(staticFileMiddleware);
 
 app.get('/', function (req, res) {
-  res.render('./dist/index.html');
+  res.render('../dist/index.html');
 });
 
 // start the server
